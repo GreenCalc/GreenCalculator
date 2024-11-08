@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Emisi Peralatan Rumah Tangga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .calculator-container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333333;
+        }
+        .appliance-section {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+        .appliance-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .appliance-options {
+            margin-top: 10px;
+            display: none;
+        }
+        .radio-group, .input-group {
+            margin: 10px 0;
+        }
+        .input-group label, .radio-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .calculate-btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            font-size: 1em;
+            background-color: #4CAF50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator-container">
+    <h1 class="section-title">Kalkulator Emisi Peralatan Rumah Tangga</h1>
+
+    <!-- Bagian Penerangan -->
+    <div class="appliance-section">
+        <div class="appliance-title">
+            <h3>Penerangan</h3>
+            <input type="checkbox" id="lighting-checkbox" onclick="toggleOptions('lighting-options')">
+        </div>
+        <div id="lighting-options" class="appliance-options">
+            <div class="radio-group">
+                <label>Jenis Lampu:</label>
+                <label><input type="radio" name="lamp-type" value="0.06"> Pijar</label>
+                <label><input type="radio" name="lamp-type" value="0.03"> Neon</label>
+                <label><input type="radio" name="lamp-type" value="0.01"> LED</label>
+            </div>
+            <div class="input-group">
+                <label for="lamp-count">Jumlah Lampu:</label>
+                <input type="number" id="lamp-count" min="0" value="0">
+            </div>
+            <div class="input-group">
+                <label for="lamp-usage">Rata-rata Jam Per Hari:</label>
+                <input type="number" id="lamp-usage" min="0" value="0">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian AC -->
+    <div class="appliance-section">
+        <div class="appliance-title">
+            <h3>Pendingin Ruangan (AC)</h3>
+            <input type="checkbox" id="ac-checkbox" onclick="toggleOptions('ac-options')">
+        </div>
+        <div id="ac-options" class="appliance-options">
+            <div class="radio-group">
+                <label>Teknologi Inverter:</label>
+                <label><input type="radio" name="ac-inverter" value="0.6"> Ya</label>
+                <label><input type="radio" name="ac-inverter" value="0.9"> Tidak</label>
+            </div>
+            <div class="input-group">
+                <label for="ac-count">Jumlah AC:</label>
+                <input type="number" id="ac-count" min="0" value="0">
+            </div>
+            <div class="input-group">
+                <label for="ac-usage">Rata-rata Jam Per Hari:</label>
+                <input type="number" id="ac-usage" min="0" value="0">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian Kulkas -->
+    <div class="appliance-section">
+        <div class="appliance-title">
+            <h3>Kulkas</h3>
+            <input type="checkbox" id="fridge-checkbox" onclick="toggleOptions('fridge-options')">
+        </div>
+        <div id="fridge-options" class="appliance-options">
+            <div class="radio-group">
+                <label>Teknologi Inverter:</label>
+                <label><input type="radio" name="fridge-inverter" value="0.3"> Ya</label>
+                <label><input type="radio" name="fridge-inverter" value="0.4"> Tidak</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tombol Hitung Emisi -->
+    <button class="calculate-btn" onclick="calculateEmissions()">Hitung Emisi</button>
+
+    <!-- Hasil Emisi -->
+    <div class="result">
+        <p>Total Emisi: <span id="total-emission">0.00</span> ton CO₂/Tahun</p>
+    </div>
+</div>
+
+<script>
+    function toggleOptions(optionId) {
+        const element = document.getElementById(optionId);
+        element.style.display = element.style.display === "none" ? "block" : "none";
+    }
+
+    function calculateEmissions() {
+        let totalEmission = 0;
+
+        // Kalkulasi Emisi Lampu
+        if (document.getElementById("lighting-checkbox").checked) {
+            const lampTypeFactor = parseFloat(document.querySelector('input[name="lamp-type"]:checked')?.value || 0);
+            const lampCount = parseInt(document.getElementById("lamp-count").value) || 0;
+            const lampUsage = parseInt(document.getElementById("lamp-usage").value) || 0;
+            totalEmission += lampCount * lampUsage * lampTypeFactor * 365 / 1000;
+        }
+
+        // Kalkulasi Emisi AC
+        if (document.getElementById("ac-checkbox").checked) {
+            const acTypeFactor = parseFloat(document.querySelector('input[name="ac-inverter"]:checked')?.value || 0);
+            const acCount = parseInt(document.getElementById("ac-count").value) || 0;
+            const acUsage = parseInt(document.getElementById("ac-usage").value) || 0;
+            totalEmission += acCount * acUsage * acTypeFactor * 365 / 1000;
+        }
+
+        // Kalkulasi Emisi Kulkas
+        if (document.getElementById("fridge-checkbox").checked) {
+            const fridgeFactor = parseFloat(document.querySelector('input[name="fridge-inverter"]:checked')?.value || 0);
+            totalEmission += fridgeFactor * 24 * 365 / 1000;
+        }
+
+        // Tampilkan hasil emisi
+        document.getElementById("total-emission").textContent = totalEmission.toFixed(2);
+    }
+</script>
+
+</body>
+</html>

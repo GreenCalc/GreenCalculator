@@ -1,0 +1,243 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2em;
+    background-color: #ffffff;
+    color: white;
+}
+
+nav .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #3db63e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 580;
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4em 2em;
+    background-color: #e0f7fa;
+    background-image: url('background-pattern.svg'); /* Optional: Add a background pattern */
+    color: #004d40;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero button {
+    padding: 0.75em 2em;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #004d40;
+}
+
+/* Rankings Section */
+.rankings {
+    text-align: center;
+    padding: 3em 2em;
+    background-color: #f1f8e9;
+}
+
+.rankings h2 {
+    font-size: 2em;
+    color: #004d40;
+    margin-bottom: 1.5em;
+}
+
+.ranking-items {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.ranking-item {
+    width: 200px;
+    padding: 1.5em;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ranking-item p {
+    margin-top: 0.5em;
+}
+
+.medal {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.gold { background-color: #ffd700; }
+.silver { background-color: #c0c0c0; }
+.bronze { background-color: #cd7f32; }
+
+/* Calculator Section */
+.calculator {
+    padding: 3em 2em;
+    text-align: center;
+    background-color: #e0f7fa;
+}
+
+.calculator h2 {
+    font-size: 2em;
+    color: #004d40;
+    margin-bottom: 1em;
+}
+
+.calculator p {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto 1.5em;
+}
+
+.calculator button {
+    padding: 0.75em 2em;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.calculator button:hover {
+    background-color: #004d40;
+}
+
+/* Impact Section */
+.impact {
+    text-align: center;
+    padding: 3em 2em;
+    background-color: #f9fbe7;
+}
+
+.impact h2 {
+    font-size: 2em;
+    color: #33691e;
+    margin-bottom: 1.5em;
+}
+
+.impact-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.impact-item {
+    width: 250px;
+    padding: 1.5em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: #33691e;
+}
+
+.impact-item h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* Latest Information Section */
+.latest-info {
+    padding: 3em 2em;
+    background-color: #f1f8e9;
+    text-align: center;
+}
+
+.latest-info h2 {
+    font-size: 2em;
+    color: #004d40;
+    margin-bottom: 1.5em;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.info-card {
+    width: 300px;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.info-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    padding: 2em;
+    background-color: #e0f7fa;
+    color: black;
+    text-align: center;
+    font-weight: 580;
+}
+
+footer p {
+    margin: 0.5em 0;
+}

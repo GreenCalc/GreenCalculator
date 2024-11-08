@@ -1,0 +1,28 @@
+<section id="section-transportasi-darat" class="calculator-section" style="display: none;">
+    <h2>Transportasi Darat</h2>
+    <form id="carbonCalculator">
+        <label for="vehicleType">Jenis Kendaraan:</label>
+        <select id="vehicleType" required>
+            <option value="mobil_bensin">Mobil Bensin</option>
+            <option value="mobil_diesel">Mobil Diesel</option>
+            <option value="motor">Motor</option>
+            <option value="bus">Bus</option>
+            <option value="sepeda">Sepeda</option>
+        </select>
+
+        <label for="distance">Jarak Tempuh (km):</label>
+        <input type="number" id="distance" required min="1" placeholder="Masukkan jarak">
+
+        <label for="frequency">Frekuensi Penggunaan:</label>
+        <select id="frequency" required>
+            <option value="1">Harian</option>
+            <option value="7">Mingguan</option>
+            <option value="30">Bulanan</option>
+            <option value="365">Tahunan</option>
+        </select>
+
+        <button type="button" onclick="calculateCarbon()">Hitung Emisi</button>
+    </form>
+
+    <div id="result"></div>
+</section>

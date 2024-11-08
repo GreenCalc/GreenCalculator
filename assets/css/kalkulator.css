@@ -1,0 +1,1370 @@
+.category-option {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 150px;
+    transition: transform 0.3s;
+}
+
+.category-option:hover {
+    transform: translateY(-20px);
+}
+
+.category-option img {
+    width: 80px;
+    height: 80px;
+}
+
+.category-option p {
+    margin: 10px 0 0;
+    font-weight: bold;
+    color: #000;
+}
+
+.category-section {
+    text-align: center;
+    padding: 20px;
+    margin: 40px 0;
+}
+
+.category-section h2 {
+    padding-bottom: 50px;
+    padding-left: 45px;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+.category-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 10px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #f39c12;
+}
+
+.frequency-options {
+    display: none;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.frequency-options.show {
+    display: flex;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#carbon-result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#confirm-carbon {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confirm-carbon:hover {
+    background: #0056b3;
+}
+
+.calculator-section {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    max-width: 800px;
+    padding: 70px;
+    text-align: center;
+}
+
+.calculator-section h2 {
+    font-size: 40px;
+    color: #0077b6;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.input-section {
+    margin: 20px 0;
+}
+
+.input-section h3 {
+    color: #333;
+}
+
+.input-section input[type="number"], 
+.input-section input[type="text"], 
+.input-section select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+}
+
+.flight-class, .flight-type, .flight-frequency {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.flight-class label, .flight-type label, .flight-frequency label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.flight-class label img, .flight-type label img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.flight-class label:hover img, .flight-type label:hover img {
+    transform: scale(1.1);
+}
+
+input[type="radio"] {
+    margin-bottom: 5px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.calculate-btn {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.calculate-btn:hover {
+    background-color: #005f8c;
+}
+
+.result {
+    background: #eaf4fa;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: #0077b6;
+    margin-top: 20px;
+}
+
+.result span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer {
+    background: #0077b6;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer .subscribe {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+footer .subscribe input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+
+footer .subscribe button {
+    background-color: #ffe66d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer .subscribe button:hover {
+    background-color: #ffcd00;
+}
+
+.vehicle-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin: 20px 0;
+}
+
+.vehicle-options label {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-options label:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    background-color: #f0f8ff;
+}
+
+.vehicle-options img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.vehicle-options input[type="radio"]:checked + img {
+    transform: scale(1.1);
+    border: 3px solid #0077b6;
+    border-radius: 12px;
+}
+
+.vehicle-options p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0077b6;
+    text-align: center;
+    margin: 5px 0 0;
+    transition: color 0.3s ease;
+}
+
+.vehicle-options input[type="radio"]:checked + img + p {
+    color: #005f8c;
+}
+
+.category-option {
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.category-option.active,
+.category-option:hover {
+    background-color: #3498db;
+    border-color: #2980b9;
+    transform: translateY(-15px);
+}
+
+.category-option img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.category-option p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Styling untuk Calculator Sections */
+.calculator-section {
+    display: none;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-section h2 {
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-bottom: 15px;
+}
+
+.input-section h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.input-section label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.vehicle-options,
+.flight-class,
+.flight-type,
+.flight-frequency,
+.food-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.vehicle-options label,
+.flight-class label,
+.flight-type label,
+.food-item label {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.vehicle-options img,
+.flight-class img,
+.flight-type img,
+.food-item img {
+    width: 85px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+.calculate-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+.calculate-btn:hover {
+    background-color: #2980b9;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.result p {
+    font-weight: bold;
+}
+
+.frequency-options {
+    display: none;
+    margin-top: 10px;
+}
+
+.food-item input[type="checkbox"]:checked ~ .frequency-options {
+    display: block;
+}
+
+/* Styling untuk Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer .subscribe {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.calculator-section {
+    background-color: #f0f7fc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.calculator-section h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-section h3 {
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.flight-class, .flight-type, .flight-frequency {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.flight-class label, .flight-type label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.flight-class img, .flight-type img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.flight-class input[type="radio"],
+.flight-type input[type="radio"],
+.flight-frequency input[type="radio"] {
+    display: none;
+}
+
+.flight-class input[type="radio"]:checked + img,
+.flight-type input[type="radio"]:checked + img {
+    transform: scale(1.1);
+    border: 3px solid #414141;
+    border-radius: 100%;
+}
+
+
+
+.flight-frequency label {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.flight-frequency label {
+    display: inline-block;
+    background-color: #3498db; /* Warna biru */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animasi */
+}
+
+.flight-frequency input[type="radio"]:checked + label {
+    background-color: #3498db;
+    color: #fff;
+}
+
+#distance {
+    width: 455px; /* Atur lebar sesuai kebutuhan */
+}
+
+
+#flight-distance {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#distance-display {
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+.calculate-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    width: 100%;
+}
+
+.calculate-btn:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.result {
+    background-color: #e8f6fd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+.result span {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.calculator-section {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.appliance-section {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.appliance-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.appliance-icon img {
+    width: 130px;
+    height: 130px;
+}
+
+.appliance-title h3 {
+    margin: 0;
+}
+
+.appliance-checkbox input {
+    width: 20px;
+    height: 20px;
+}
+
+.appliance-options {
+    margin-top: 10px;
+}
+
+.lamp-types {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.lamp-option {
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    box-sizing: border-box; /* Pastikan ukuran kotak termasuk padding dan border */
+}
+
+.lamp-option img {
+    width: 120px;
+    height: 120px;
+}
+
+.lamp-inputs {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lamp-inputs label, .lamp-inputs input {
+    margin-bottom: 5px;
+}
+
+.emission-result {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.result-item h4 {
+    margin: 0;
+}
+
+.result-item p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Hide the original radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style the labels as buttons */
+.radio-group label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Change background when hovering */
+.radio-group label:hover {
+    background-color: #e0e0e0;
+    border-color: #bbb;
+}
+
+/* Style for checked (selected) radio buttons */
+input[type="radio"]:checked + label {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+/* Spacing between the radio buttons */
+.radio-group {
+    padding-left: 190px;
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.flight-frequency label:hover {
+    background-color: #2980b9; /* Warna lebih gelap saat di-hover */
+}
+
+.flight-frequency input[type="radio"] {
+    display: none; /* Sembunyikan input radio asli */
+}
+
+.flight-frequency input[type="radio"]:checked + label {
+    background-color: #2ecc71; /* Warna hijau saat dipilih */
+}
+
+.lamp-option label {
+    display: block;
+    cursor: pointer;
+    transition: border 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent; /* Hilangkan warna background default */
+}
+
+.lamp-option img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.lamp-option label:hover img {
+    transform: scale(1.1); /* Zoom gambar saat di-hover */
+}
+
+.lamp-option input[type="radio"] {
+    display: none; /* Sembunyikan tombol radio asli */
+}
+
+.lamp-option input[type="radio"]:checked + label {
+    border: 3px solid #2ecc71; /* Border hijau saat dipilih */
+    background-color: #eaf9e9; /* Latar belakang hijau muda untuk label saat dipilih */
+    border-radius: 10px;
+}
+
+.lamp-option input[type="radio"]:checked + label img {
+    border: none; /* Hilangkan border di gambar */
+}
+
+.lamp-option input[type="radio"]:checked + label {
+    color: #2ecc71; /* Warna teks berubah saat dipilih */
+}
+
+.lamp-option label {
+    box-sizing: border-box; /* Termasuk padding dan border ke dalam ukuran label */
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: bold;
+}
+
+p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    color: #28a745;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px;
+}
+
+.food-selection {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.food-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.food-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.frequency-options {
+    background-color: #e6f2ff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.frequency-label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.frequency-choice {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.frequency-choice input[type="radio"] {
+    display: none;
+}
+
+.frequency-choice label {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid #b0d0ff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d9eaff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.frequency-choice label:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.frequency-choice input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+    background-color: #357abd;
+}
+
+.submit-button:active {
+    background-color: #2d6ca3;
+}
+
+    /* CSS */
+.ultra-modern-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    font-family: Arial, sans-serif;
+}
+
+.ultra-modern-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.ultra-modern-checkbox .checkmark {
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, #ddd, #ccc);
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 12px;
+    position: relative;
+    transition: background 0.4s, box-shadow 0.4s, transform 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.ultra-modern-checkbox .checkmark::before, .ultra-modern-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease, opacity 0.4s;
+}
+
+.ultra-modern-checkbox .checkmark::before {
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(76, 175, 80, 0.6), transparent);
+    opacity: 0;
+}
+
+.ultra-modern-checkbox .checkmark::after {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    opacity: 0;
+}
+
+.ultra-modern-checkbox input[type="checkbox"]:hover ~ .checkmark {
+    background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
+    box-shadow: 0 4px 20px rgba(76, 175, 80, 0.6);
+}
+
+.ultra-modern-checkbox input[type="checkbox"]:checked ~ .checkmark {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.8), 0 0 30px rgba(76, 175, 80, 0.5);
+    transform: scale(1.1);
+}
+
+.ultra-modern-checkbox input[type="checkbox"]:checked ~ .checkmark::before {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 1;
+}
+
+.ultra-modern-checkbox input[type="checkbox"]:checked ~ .checkmark::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+/* From Uiverse.io by bociKond */ 
+/* Hide the default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5rem;
+    user-select: none;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    --clr: #0B6E4F;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: 300ms;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: var(--clr);
+    border-radius: .5rem;
+    animation: pulse 500ms ease-in-out;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid #E0E0E2;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 #0B6E4F90;
+      rotate: 20deg;
+    }
+  
+    50% {
+      rotate: -20deg;
+    }
+  
+    75% {
+      box-shadow: 0 0 0 10px #0B6E4F60;
+    }
+  
+    100% {
+      box-shadow: 0 0 0 13px #0B6E4F30;
+      rotate: 0;
+    }
+  }
+
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+select, input[type="number"], button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.calculator-section { display: block; margin-top: 20px; }
+.category-option.active { background-color: #007bff; color: white; }
+
+.category-selection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.category-option {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-option:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.category-option.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.calculator-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-section h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+form input[type="number"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Main styling for the calculator section */
+.calculator-section {
+    max-width: 480px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e0eaf3;
+}
+
+.calculator-section h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Styling the form */
+#carbonCalculator {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+/* Label styling */
+#carbonCalculator label {
+    font-size: 0.95rem;
+    color: #4a4a4a;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+/* Input field and select styling */
+#carbonCalculator input[type="number"],
+#carbonCalculator select {
+    padding: 0.7rem;
+    font-size: 1rem;
+    color: #333;
+    border: 1px solid #d1dae6;
+    border-radius: 6px;
+    background-color: #f7fafd;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#carbonCalculator input[type="number"]:focus,
+#carbonCalculator select:focus {
+    border-color: #82b1ff;
+    box-shadow: 0 0 8px rgba(130, 177, 255, 0.3);
+    outline: none;
+}
+
+/* Button styling */
+#carbonCalculator button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #0077cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s, box-shadow 0.2s;
+}
+
+#carbonCalculator button:hover {
+    background-color: #005fa3;
+    box-shadow: 0 4px 8px rgba(0, 95, 163, 0.2);
+}
+
+/* Result section styling */
+#result {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    border-color: #e8f6fd;
+}
+
+.vehicle-options label {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.vehicle-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.vehicle-options input[type="radio"] {
+    display: none;
+}
+
+.vehicle-options input[type="radio"]:checked + .vehicle-img {
+    border: 2px solid #007bff;
+}
+
+/* CSS untuk tombol */
+.button-container {
+    display: flex;
+    gap: 10px; 
+    padding-left: 38px;/* Jarak antar tombol */
+}
+
+.pushable {
+    position: relative;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: filter 250ms;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    filter: blur(4px);
+    transform: translateY(2px);
+    transition: transform 250ms;
+}
+
+.edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background: linear-gradient(to right, hsl(248, 39%, 39%) 0%, hsl(248, 39%, 49%) 8%, hsl(248, 39%, 39%) 92%, hsl(248, 39%, 29%) 100%);
+}
+
+.front {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    background: hsl(248, 53%, 58%);  /* Warna default */
+    padding: 16px 32px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    transition: transform 250ms, background-color 200ms ease-in-out;
+}
+
+/* Efek saat tombol ditekan */
+.pushable:active .front {
+    background-color: hsl(120, 80%, 50%) !important; /* Warna hijau saat diklik */
+}
+
+.pushable:active .shadow {
+    transform: translateY(1px);
+}
